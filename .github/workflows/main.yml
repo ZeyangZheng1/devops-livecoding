@@ -24,7 +24,7 @@ jobs:
       - name: Build and test with Maven and SonarCloud
         run: |
           mvn -B verify sonar:sonar \
-            -Dsonar.projectKey=devops-livecoding \
+            -Dsonar.projectKey=ZeyangZheng1_devops-livecoding \
             -Dsonar.organization=devopsschool \
             -Dsonar.host.url=https://sonarcloud.io \
             -Dsonar.login=${{ secrets.SONAR_TOKEN }} \
