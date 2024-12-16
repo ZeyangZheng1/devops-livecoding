@@ -2,7 +2,7 @@ name: Build and Push Docker Images
 
 on:
   workflow_run:
-    workflows: ["Test Backend"]
+    workflows: [Test Backend]
     types:
       - completed
 #test1
