@@ -8,7 +8,7 @@ on:
 
 jobs:
   build-and-push-docker-images:
-    if: github.event.workflow_run.conclusion == 'success' && github.ref == 'refs/heads/main'
+    if: github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout code
