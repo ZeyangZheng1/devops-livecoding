@@ -2,13 +2,13 @@ name: Build and Push Docker Images
 
 on:
   workflow_run:
-    workflows: [Test Backend]
+    workflows: ["Test Backend"]
     types:
       - completed
-#test1
+
 jobs:
   build-and-push-docker-images:
-    if: github.event.workflow_run.conclusion == 'success' && github.ref == 'refs/heads/master'
+    if: github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout code
